@@ -35,7 +35,7 @@ class Game:
         self.show_board()
         while self.blue and self.red and self.assassin:
             if self.turn_toggle:
-                print('It\'s your turn:')
+                print('It\'s your turn; type \"PASS\" to end your turn.')
                 self.show_board()
                 self.turn()
             else:
@@ -83,18 +83,22 @@ class Game:
 
         while i < num_guesses and not end and word != 'PASS':
             word = self.guess()
+            if word == 'PASS':
+                return
             if (word not in self.blue and self.player == 'blue') or (word not in self.red and self.player=='red'):
                 print('Your guess was incorrect.  Your turn is over.')
                 print()
                 end = True
             else:
-                print('Correct. You have ' + str(num_guesses) + ' more guesses.')
+                print('Correct. You have ' + str(num_guesses-i-1) + ' more guesses.')
             self.remove_word(word)
             i += 1
         return
 
     def guess(self):
         query = input('Guess a word: ')
+        if query == 'PASS':
+            return query
         while query not in self.board:
             query = input('error: query not in game board. Try again: ')
         return query
