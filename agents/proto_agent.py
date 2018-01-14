@@ -20,7 +20,6 @@ class Proto_Agent:
         return clue
 
     # Compute codename similar words individually, then consolidate the lists to get suggestions
-    '''to do: add penalty for neutral, red and assassin'''
     def get_neighbors(self, codenames, n_words=15):
         candidate_words = []
 
@@ -53,4 +52,4 @@ class Proto_Agent:
         # Can't give a clue that's the same as or part of a word in the game; remove "illegal" clues
         neighbors = list(filter(lambda x: all((x[0] not in i) and (i not in x[0]) for i in self.board), neighbors))
 
-        return list(set(neighbors)) # remove redundancy
+        return list(set(neighbors)) # remove redundancies
