@@ -4,6 +4,7 @@ from agents.proto_agent import Proto_Agent
 import copy
 
 class Game:
+
     def __init__(self, words, agent):
         def get_game_words(words):
             game_words = np.random.choice(words, replace=False, size=25)
@@ -27,7 +28,10 @@ class Game:
             self.turn_toggle = False
 
         np.random.shuffle(self.board)
+        return
 
+    #executes the game
+    def execute(self):
         print('Let\'s play Codenames')
         print('Your color is: ' + self.player)
         print('the board is:')
@@ -55,9 +59,9 @@ class Game:
                 print('You win!!')
             else:
                 print('Computer wins!')
-
         self.show_board()
 
+    #shows the game board as a 5x5 grid
     def show_board(self):
         print()
         for j in range(0, 25, 5):
@@ -68,6 +72,7 @@ class Game:
         print()
         return
 
+    #execute a full turn for the player
     def turn(self):
         print('Spymaster is generating a clue...')
         if self.player == 'blue':
@@ -90,11 +95,12 @@ class Game:
                 print()
                 end = True
             else:
-                print('Correct. You have ' + str(num_guesses-i-1) + ' more guesses.')
+                print('Correct. You have ' + str(num_guesses-i-1) + ' more guess(es).')
             self.remove_word(word)
             i += 1
         return
 
+    #query a guess from the user
     def guess(self):
         query = input('Guess a word: ')
         if query == 'PASS':
@@ -103,6 +109,7 @@ class Game:
             query = input('error: query not in game board. Try again: ')
         return query
 
+    #choose words for the opponent
     def opp_turn(self):
         num = np.random.choice([0,1,2,3], p=[0.2, 0.6, 0.1, 0.1])
         if num == 0:
@@ -114,6 +121,7 @@ class Game:
             for w in np.random.choice(self.blue, size=min(num, len(self.blue)), replace=False):
                 self.remove_word(w)
 
+    #removes a word from the game once it's guessed
     def remove_word(self, word):
         if word in self.blue:
             self.board = [i if i != word else 'BLUE' for i in self.board]
@@ -127,8 +135,4 @@ class Game:
         elif word in self.assassin:
             self.board = [i if i != word else 'ASSASSIN' for i in self.board]
             self.assassin.remove(word)
-        #else:
-        #    pdb.set_trace()
-        #    print(word)
-        #    self.board = [i if i != word else 'ERROR' for i in self.board]
         return

@@ -13,10 +13,21 @@ class Proto_Agent:
         self.vec_model = KeyedVectors.load_word2vec_format(path, binary=True, limit=500000)
 
         self.board = game_board
+        self.past_clues = []
 
     def generate_clue(self, codenames):
         options = self.get_neighbors(codenames)
+
         clue = options[0]
+
+        i = 0
+        
+        #try to give different clues each time
+        while clue in self.past_clues and i < len(options):
+            i += 1
+            clue = options[i]
+        self.past_clues.append(clue)
+
         return clue
 
     # Compute codename similar words individually, then consolidate the lists to get suggestions
@@ -29,7 +40,6 @@ class Proto_Agent:
                 neighbors = self.vec_model.most_similar(positive=[word], topn=n_words)
                 # neighbors = vec_model.most_similar_cosmul(positive=[word], topn = 20)
                 # neighbors = vec_model.similar_by_word(word, topn = 10)
-
                 neighbors = self.parse_suggestions(neighbors)
                 candidate_words.extend(neighbors)
             except KeyError:

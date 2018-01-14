@@ -8,3 +8,5 @@ with open('words.txt', 'r') as f:
     words = [i.strip('\n').lower() for i in f.readlines()]
 
 game = Game(words, Proto_Agent)
+
+game.execute()
