@@ -1,0 +1,126 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180115170504
+Username: Avi-PC\Avi
+RunAs User: Avi-PC\Avi
+Configuration Name: 
+Machine: AVI-PC (Microsoft Windows NT 10.0.16299.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6988
+PSVersion: 5.1.16299.98
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.16299.98
+BuildVersion: 10.0.16299.98
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Avi\Desktop\Projects\Codenames\transcript.txt
+PS C:\Users\Avi\Desktop\Projects\Codenames> python .\main.py
+Using TensorFlow backend.
+Let's play Codenames
+Your color is: blue
+the board is:
+
+   snow      superhero           wind                 strike                      ninja
+ mercury      bridge             soul                  bell                       circle
+   belt      conductor           spot                 unicorn                      line
+   hand        beach             foot                  pipe                     parachute
+  court      australia          plane                  spine                      mount
+
+It's your turn; type "PASS" to end your turn.
+
+   snow      superhero           wind                 strike                      ninja
+ mercury      bridge             soul                  bell                       circle
+   belt      conductor           spot                 unicorn                      line
+   hand        beach             foot                  pipe                     parachute
+  court      australia          plane                  spine                      mount
+
+Spymaster is generating a clue...
+Your clue is: berth, 2
+Guess a word: belt
+Correct. You have 2 more guess(es).
+Guess a word: circle
+Your guess was incorrect.  Your turn is over.
+
+It's the computer's turn:
+the computer has gone.
+It's your turn; type "PASS" to end your turn.
+
+   snow      superhero           wind                   RED                       ninja
+ mercury      bridge             soul                  bell                        RED
+   BLUE      conductor           spot                 unicorn                      line
+   hand        beach             foot                  pipe                     parachute
+  court      australia          plane                  spine                      mount
+
+Spymaster is generating a clue...
+Your clue is: place, 2
+Guess a word: court
+Your guess was incorrect.  Your turn is over.
+
+It's the computer's turn:
+the computer has gone.
+It's your turn; type "PASS" to end your turn.
+
+   snow      superhero           wind                   RED                       ninja
+ mercury      bridge             soul                  bell                        RED
+   BLUE      conductor           spot                   RED                        line
+   hand        beach             foot                  pipe                     parachute
+   RED       australia          plane                  spine                      mount
+
+Spymaster is generating a clue...
+Your clue is: slot, 2
+Guess a word: conductor
+Correct. You have 2 more guess(es).
+Guess a word: spot
+Correct. You have 1 more guess(es).
+Guess a word: PASS
+It's the computer's turn:
+the computer has gone.
+It's your turn; type "PASS" to end your turn.
+
+   snow      superhero           wind                   RED                       ninja
+ mercury      bridge             soul                  bell                        RED
+   BLUE        BLUE              BLUE                   RED                        line
+   hand        beach             foot                  pipe                        RED
+   RED       australia          plane                  spine                      mount
+
+Spymaster is generating a clue...
+Your clue is: gust, 2
+Guess a word: wind
+Correct. You have 2 more guess(es).
+Guess a word: snow
+Your guess was incorrect.  Your turn is over.
+
+It's the computer's turn:
+the computer has gone.
+It's your turn; type "PASS" to end your turn.
+
+ NEUTRAL     superhero           BLUE                   RED                       ninja
+ mercury      bridge             soul                  bell                        RED
+   BLUE        BLUE              BLUE                   RED                        line
+   hand        beach             RED                   pipe                        RED
+   RED       australia          plane                  spine                      mount
+
+Spymaster is generating a clue...
+Your clue is: piping, 1
+Guess a word: pipe
+Correct. You have 1 more guess(es).
+Guess a word: spine
+Your guess was incorrect.  Your turn is over.
+
+It's the computer's turn:
+the computer has gone.
+Assassin!! Game over!  You win!!
+
+ NEUTRAL     superhero           BLUE                   RED                       ninja
+ mercury      bridge             soul                  bell                        RED
+   BLUE        BLUE              BLUE                   RED                        line
+   hand      ASSASSIN            RED                   BLUE                        RED
+   RED       australia          plane                 NEUTRAL                     mount
+PS C:\Users\Avi\Desktop\Projects\Codenames> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20180115170838
+**********************

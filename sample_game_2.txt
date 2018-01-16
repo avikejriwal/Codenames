@@ -1,0 +1,62 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180115165012
+Username: Avi-PC\Avi
+RunAs User: Avi-PC\Avi
+Configuration Name: 
+Machine: AVI-PC (Microsoft Windows NT 10.0.16299.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6988
+PSVersion: 5.1.16299.98
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.16299.98
+BuildVersion: 10.0.16299.98
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Avi\Desktop\Projects\Codenames\transcript2.txt
+PS C:\Users\Avi\Desktop\Projects\Codenames> python .\main.py
+Using TensorFlow backend.
+Let's play Codenames
+Your color is: blue
+the board is:
+
+ olympus       bank           undertaker               tower                      spine
+   car         boot            capital                 cycle                    limousine
+   file       cotton            string                 ship                       spider
+  board       rabbit            screen                london                       iron
+   ray         fire            hospital                moon                        trip
+
+It's your turn; type "PASS" to end your turn.
+
+ olympus       bank           undertaker               tower                      spine
+   car         boot            capital                 cycle                    limousine
+   file       cotton            string                 ship                       spider
+  board       rabbit            screen                london                       iron
+   ray         fire            hospital                moon                        trip
+
+Spymaster is generating a clue...
+Your clue is: trustee, 3
+Guess a word: board
+Correct. You have 3 more guess(es).
+Guess a word: bank
+Correct. You have 2 more guess(es).
+Guess a word: hospital
+Correct. You have 1 more guess(es).
+Guess a word: PASS
+It's the computer's turn:
+the computer has gone.
+Assassin!! Game over!  You win!!
+
+ olympus       BLUE           undertaker               tower                      spine
+   car         boot            capital                 cycle                    limousine
+   file       cotton            string                 ship                       spider
+   BLUE      ASSASSIN           screen                london                       iron
+   ray         fire              BLUE                  moon                        trip
+PS C:\Users\Avi\Desktop\Projects\Codenames> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20180115165327
+**********************

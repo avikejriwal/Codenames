@@ -1,0 +1,140 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180115165332
+Username: Avi-PC\Avi
+RunAs User: Avi-PC\Avi
+Configuration Name: 
+Machine: AVI-PC (Microsoft Windows NT 10.0.16299.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6988
+PSVersion: 5.1.16299.98
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.16299.98
+BuildVersion: 10.0.16299.98
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Avi\Desktop\Projects\Codenames\transcript3.txt
+PS C:\Users\Avi\Desktop\Projects\Codenames> python .\main.py
+Using TensorFlow backend.
+Let's play Codenames
+Your color is: red
+the board is:
+
+hollywood       bar             swing                   ray                        row
+ capital      concert            lock                  egypt                       code
+  board        space          himalayas                mine                      atlantis
+ambulance       spy            olympus                 bomb                        club
+   park        moon            kangaroo               cricket                      shop
+
+It's the computer's turn:
+the computer has gone.
+It's your turn; type "PASS" to end your turn.
+
+hollywood       bar             swing                   ray                        row
+ capital      concert            lock                  egypt                       code
+  board        BLUE           himalayas                mine                      atlantis
+ambulance       spy            olympus                 bomb                        club
+   park        moon            kangaroo               cricket                      shop
+
+Spymaster is generating a clue...
+Your clue is: paramedic, 3
+Guess a word: ambulance
+Correct. You have 3 more guess(es).
+Guess a word: bar
+Your guess was incorrect.  Your turn is over.
+
+It's the computer's turn:
+the computer has gone.
+It's your turn; type "PASS" to end your turn.
+
+hollywood      BLUE             swing                   ray                        row
+ capital      concert            lock                  egypt                       code
+  board        BLUE           himalayas                mine                      atlantis
+   RED          spy            olympus                 bomb                        club
+ NEUTRAL       moon            kangaroo               cricket                      shop
+
+Spymaster is generating a clue...
+Your clue is: mining, 2
+Guess a word: mine
+Correct. You have 2 more guess(es).
+Guess a word: egypt
+Your guess was incorrect.  Your turn is over.
+
+It's the computer's turn:
+the computer has gone.
+It's your turn; type "PASS" to end your turn.
+
+hollywood      BLUE             swing                   ray                        row
+ capital      concert            lock                  BLUE                        code
+ NEUTRAL       BLUE           himalayas                 RED                      atlantis
+   RED          spy            olympus                 bomb                        club
+ NEUTRAL       moon            kangaroo               cricket                      shop
+
+Spymaster is generating a clue...
+Your clue is: liquidity, 2
+Guess a word: atlantis
+Correct. You have 2 more guess(es).
+Guess a word: ray
+Your guess was incorrect.  Your turn is over.
+
+It's the computer's turn:
+the computer has gone.
+It's your turn; type "PASS" to end your turn.
+
+hollywood      BLUE            NEUTRAL                NEUTRAL                      row
+ capital      concert            lock                  BLUE                        code
+ NEUTRAL       BLUE           himalayas                 RED                        RED
+   RED          spy            olympus                 bomb                        club
+ NEUTRAL       moon            kangaroo               cricket                      shop
+
+Spymaster is generating a clue...
+Your clue is: mar, 1
+Guess a word: moon
+Correct. You have 1 more guess(es).
+Guess a word: bomb
+Correct. You have 0 more guess(es).
+It's the computer's turn:
+the computer has gone.
+It's your turn; type "PASS" to end your turn.
+
+hollywood      BLUE            NEUTRAL                NEUTRAL                      row
+ capital       BLUE              lock                  BLUE                        code
+ NEUTRAL       BLUE           himalayas                 RED                        RED
+   RED          spy            olympus                  RED                        club
+ NEUTRAL        RED            kangaroo               cricket                      shop
+
+Spymaster is generating a clue...
+Your clue is: financing, 1
+Guess a word: capital
+Correct. You have 1 more guess(es).
+Guess a word: PASS
+It's the computer's turn:
+the computer has gone.
+It's your turn; type "PASS" to end your turn.
+
+   BLUE        BLUE            NEUTRAL                NEUTRAL                      BLUE
+   RED         BLUE              lock                  BLUE                        code
+ NEUTRAL       BLUE           himalayas                 RED                        RED
+   RED          spy            olympus                  RED                        club
+ NEUTRAL        RED            kangaroo               cricket                      BLUE
+
+Spymaster is generating a clue...
+Your clue is: latch, 1
+Guess a word: code
+Your guess was incorrect.  Your turn is over.
+
+Assassin!! Game over!  Computer wins!
+
+   BLUE        BLUE            NEUTRAL                NEUTRAL                      BLUE
+   RED         BLUE              lock                  BLUE                      ASSASSIN
+ NEUTRAL       BLUE           himalayas                 RED                        RED
+   RED          spy            olympus                  RED                        club
+ NEUTRAL        RED            kangaroo               cricket                      BLUE
+PS C:\Users\Avi\Desktop\Projects\Codenames> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20180115165807
+**********************
